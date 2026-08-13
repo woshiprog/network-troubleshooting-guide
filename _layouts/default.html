@@ -3,19 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
-    <meta name="robots" content="index,follow,max-image-preview:large">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+    <title>
+      {% if page.title %}
+        {{ page.title | escape }}
+      {% else %}
+        {{ site.title | escape }}
+      {% endif %}
+    </title>
+
+    <meta
+      name="description"
+      content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}"
+    >
+
+    <meta
+      name="robots"
+      content="{{ page.robots | default: 'index,follow,max-image-preview:large' }}"
+    >
+
+    <link
+      rel="canonical"
+      href="{{ page.url | replace: 'index.html', '' | absolute_url }}"
+    >
+
     <meta name="theme-color" content="#102928">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css?v=3' | relative_url }}"
+    >
   </head>
+
   <body>
     <a class="skip-link" href="#main-content">跳到正文</a>
 
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="{{ '/' | relative_url }}" aria-label="网络故障排查指南首页">
+        <a
+          class="brand"
+          href="{{ '/' | relative_url }}"
+          aria-label="网络故障排查指南首页"
+        >
           <span class="brand-mark" aria-hidden="true"></span>
           <span>网络故障排查指南</span>
         </a>
@@ -28,7 +57,10 @@
       </div>
     </header>
 
-    <main id="main-content" class="page-shell{% if page.layout_class %} {{ page.layout_class }}{% endif %}">
+    <main
+      id="main-content"
+      class="page-shell{% if page.layout_class %} {{ page.layout_class }}{% endif %}"
+    >
       {{ content }}
     </main>
 
