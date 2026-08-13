@@ -310,3 +310,15 @@ pre code { padding: 0; color: inherit; background: transparent; }
     padding-bottom: 38px;
   }
 }
+/* 收紧 PC 端首页首屏 */
+@media (min-width: 769px) {
+  .hero {
+    min-height: 0;
+    padding: 88px 0 80px;
+  }
+
+  .hero-inner,
+  .hero-grid {
+    align-items: center;
+  }
+}
