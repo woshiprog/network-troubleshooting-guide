@@ -1,16 +1,48 @@
 ---
 layout: default
 title: "页面未找到｜网络故障排查指南"
-description: "该页面不存在或地址已经变化，请返回网络故障排查指南首页按现象选择排查路径。"
+description: "该页面不存在或地址已经变化，请返回网络故障排查指南首页，按当前网络现象选择排查路径。"
 permalink: /404.html
+robots: "noindex,follow"
 ---
 
 <article class="article-page">
   <header class="article-header">
     <p class="eyebrow">404</p>
-    <h1>这个地址没有对应页面</h1>
-    <p class="article-deck">可能是链接输入有误，或页面地址已经变化。你可以返回首页，按当前网络现象重新选择排查路径。</p>
-  </header>
-  <p><a href="{{ '/' | relative_url }}">返回网络故障排查首页</a></p>
-</article>
 
+    <h1>这个地址没有对应页面</h1>
+
+    <p class="article-deck">
+      可能是链接输入有误，或页面地址已经变化。你可以返回首页，
+      按当前网络现象重新选择排查路径。
+    </p>
+  </header>
+
+  <h2>你可以从这里继续</h2>
+
+  <ul>
+    <li>
+      <a href="{{ '/' | relative_url }}">返回网络故障排查首页</a>
+    </li>
+    <li>
+      <a href="{{ '/wifi-connected-no-internet/' | relative_url }}">
+        Wi-Fi 已连接但无法上网
+      </a>
+    </li>
+    <li>
+      <a href="{{ '/website-not-opening/' | relative_url }}">
+        网页打不开
+      </a>
+    </li>
+    <li>
+      <a href="{{ '/internet-slow-troubleshooting/' | relative_url }}">
+        网速突然变慢
+      </a>
+    </li>
+    <li>
+      <a href="{{ '/network-quality/' | relative_url }}">
+        查看网络质量指标
+      </a>
+    </li>
+  </ul>
+</article>
