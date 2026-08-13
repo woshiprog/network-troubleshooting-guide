@@ -1,0 +1,14 @@
+title: "网络故障排查指南"
+description: "面向普通用户的网络故障诊断手册，按现象、范围、测试和结果逐步排查 Wi-Fi、网页、DNS、延迟、丢包、网速与路由器问题。"
+lang: "zh-CN"
+url: "https://woshiprog.github.io"
+baseurl: "/network-troubleshooting-guide"
+timezone: "Asia/Shanghai"
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+
