@@ -14,28 +14,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
+    <meta name="robots" content="{{ page.robots | default: 'index,follow,max-image-preview:large' }}">
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
 
-    <meta
-      name="description"
-      content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}"
-    >
-
-    <meta
-      name="robots"
-      content="{{ page.robots | default: 'index,follow,max-image-preview:large' }}"
-    >
-
-    <link
-      rel="canonical"
-      href="{{ page.url | replace: 'index.html', '' | absolute_url }}"
-    >
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title | escape }}">
+    <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
+    <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+    <meta name="twitter:card" content="summary">
 
     <meta name="theme-color" content="#102928">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=4' | relative_url }}">
 
-    <link
-      rel="stylesheet"
-      href="{{ '/assets/css/style.css?v=4' | relative_url }}"
-    >
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": {{ page.title | default: site.title | jsonify }},
+      "description": {{ page.description | default: site.description | strip_html | normalize_whitespace | jsonify }},
+      "url": {{ page.url | replace: "index.html", "" | absolute_url | jsonify }},
+      "inLanguage": {{ site.lang | default: "zh-CN" | jsonify }},
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": {{ site.title | jsonify }},
+        "url": {{ "/" | absolute_url | jsonify }}
+      }
+    }
+    </script>
   </head>
 
   <body>
@@ -43,11 +51,7 @@
 
     <header class="site-header">
       <div class="header-inner">
-        <a
-          class="brand"
-          href="{{ '/' | relative_url }}"
-          aria-label="网络故障排查指南首页"
-        >
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="网络故障排查指南首页">
           <span class="brand-mark" aria-hidden="true"></span>
           <span>网络故障排查指南</span>
         </a>
@@ -60,10 +64,7 @@
       </div>
     </header>
 
-    <main
-      id="main-content"
-      class="page-shell{% if page.layout_class %} {{ page.layout_class }}{% endif %}"
-    >
+    <main id="main-content" class="page-shell{% if page.layout_class %} {{ page.layout_class }}{% endif %}">
       {{ content }}
     </main>
 
