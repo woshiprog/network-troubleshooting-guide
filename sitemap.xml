@@ -4,16 +4,58 @@ permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>{{ site.url }}{{ site.baseurl }}/</loc><lastmod>2026-08-13</lastmod></url>
-  <url><loc>{{ site.url }}{{ site.baseurl }}/about/</loc><lastmod>2026-08-13</lastmod></url>
-  <url><loc>{{ site.url }}{{ site.baseurl }}/network-quality/</loc><lastmod>2026-08-13</lastmod></url>
-  <url><loc>{{ site.url }}{{ site.baseurl }}/wifi-connected-no-internet/</loc><lastmod>2026-08-13</lastmod></url>
-  <url><loc>{{ site.url }}{{ site.baseurl }}/website-not-opening/</loc><lastmod>2026-08-13</lastmod></url>
-  <url><loc>{{ site.url }}{{ site.baseurl }}/dns-troubleshooting/</loc><lastmod>2026-08-13</lastmod></url>
-  <url><loc>{{ site.url }}{{ site.baseurl }}/packet-loss-test/</loc><lastmod>2026-08-13</lastmod></url>
-  <url><loc>{{ site.url }}{{ site.baseurl }}/network-latency-test/</loc><lastmod>2026-08-13</lastmod></url>
-  <url><loc>{{ site.url }}{{ site.baseurl }}/internet-slow-troubleshooting/</loc><lastmod>2026-08-13</lastmod></url>
-  <url><loc>{{ site.url }}{{ site.baseurl }}/one-device-no-internet/</loc><lastmod>2026-08-13</lastmod></url>
-  <url><loc>{{ site.url }}{{ site.baseurl }}/router-network-troubleshooting/</loc><lastmod>2026-08-13</lastmod></url>
-</urlset>
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/</loc>
+    <lastmod>2026-08-14</lastmod>
+  </url>
 
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/about/</loc>
+    <lastmod>2026-08-14</lastmod>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/network-quality/</loc>
+    <lastmod>2026-08-14</lastmod>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/wifi-connected-no-internet/</loc>
+    <lastmod>2026-08-14</lastmod>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/website-not-opening/</loc>
+    <lastmod>2026-08-14</lastmod>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/dns-troubleshooting/</loc>
+    <lastmod>2026-08-14</lastmod>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/packet-loss-test/</loc>
+    <lastmod>2026-08-14</lastmod>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/network-latency-test/</loc>
+    <lastmod>2026-08-14</lastmod>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/internet-slow-troubleshooting/</loc>
+    <lastmod>2026-08-14</lastmod>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/one-device-no-internet/</loc>
+    <lastmod>2026-08-14</lastmod>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/router-network-troubleshooting/</loc>
+    <lastmod>2026-08-14</lastmod>
+  </url>
+</urlset>
