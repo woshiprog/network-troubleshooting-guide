@@ -132,7 +132,7 @@ permalink: /internet-slow-troubleshooting/
 
 再分别记录：
 
-- 网络正常时的一组��果。
+- 网络正常时的一组结果。
 - 实际故障时的一组结果。
 - Wi-Fi 的一组结果。
 - 网线的一组结果。
