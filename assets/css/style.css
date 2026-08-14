@@ -446,7 +446,7 @@ pre code {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 860px) {
   body {
     font-size: 16px;
   }
